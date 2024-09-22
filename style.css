@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "freight big pro";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  background-color: #000;
+}
+
+#loader {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 99;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#loader h1 {
+  font-size: 6.5vw;
+  line-height: 5.5vw;
+  font-weight: 100;
+  letter-spacing: -2px;
+  position: relative;
+  z-index: 9;
+}
+
+#loader video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 6;
+}
+#loader #yellow1 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 8;
+}
+#loader #yellow2 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 7;
+}
+
+#nav {
+  /* height: 100px; */
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+#nav svg {
+  fill: #000;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#page1 h1 {
+  font-size: 6.5vw;
+  line-height: 5.5vw;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
