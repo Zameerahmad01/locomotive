@@ -38,3 +38,17 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
   smooth: true,
 });
+
+document.querySelector("#footer h2").addEventListener("click", () => {
+  scroll.scrollTo(0);
+});
+
+let elem = document.querySelectorAll(".elem");
+let page2 = document.querySelector("#page2");
+
+elem.forEach((elem) => {
+  elem.addEventListener("mouseenter", () => {
+    let img = elem.getAttribute("data-img");
+    page2.style.backgroundImage = `url(${img})`;
+  });
+});
